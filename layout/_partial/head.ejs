@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+
+    <!--Description-->
+    <% if (page.description){ %>
+        <meta name="description" content="<%= page.description %>">
+    <% } else if (config.description){ %>
+        <meta name="description" content="<%= config.description %>">
+    <% } else if (page.excerpt){ %>
+        <meta name="description" content="<%= strip_html(page.excerpt).replace(/^\s*/, '').replace(/\s*$/, '') %>">
+    <% } else if (page.content){ %>
+        <meta name="description" content="<%= strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150) %>">
+    <% } %>
+
+    <!--Author-->
+    <% if (config.author){ %>
+        <meta name="author" content="<%= config.author %>">
+    <% } %>
+
+    <!-- Title -->
+    <%
+    var title = [];
+    if (page.current > 1) title.push(__('page', page.current));
+    if (page.title) title.push(page.title);
+    if (page.category) title.push(page.category);
+    if (page.tag) title.push(page.tag);
+    if (page.archive) {
+        if (page.year) title.push(__('archive_b', page.year + (page.month ? '/' + page.month : '')));
+        else title.push(__('archive_a'));
+    }
+    title.push(config.title);
+    %>
+    <title><%= title.join(' | ') %></title>
+
+    <!-- Custom CSS -->
+    <%- css('css/style.css') %>
+	<link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.css" rel="stylesheet">
+</head>
+<body class="animated fadeIn">
+    <!--header begin-->
+    <div class="header">
+        <div class="logo">
+            <a href="" class="title_logo"><img src="../source/images/logo.png" alt="mochiko" class="img_logo">阿糕家后院</a>
+            
+        </div>
+        <div class="navigator">
+            <ul>
+                <li><a href="" class="active">私の日常</a></li>
+                <li><a href="">学习小记</a></li>
+                <li><a href="">素晴らしい</a></li>
+                <li><a href="">任意门</a></li>
+            </ul>
+        </div>
+    </div><!--header end-->

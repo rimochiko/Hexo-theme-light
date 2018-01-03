@@ -1,0 +1,25 @@
+<%- partial('_partial/head') %>
+	<div class="main">
+		<div class="article-list">
+			<div class="article">
+				<div class="date">
+					<p class="p_date"><%- item.date.format(theme.date_format) %></p>
+				</div>
+				<div class="title">
+					<p class="p_title"><%- item.title || theme.default_post_title || "Untitled" %></p>
+				</div>
+				<div class="des">
+					<%- item.content %>
+				</div>
+				<div class="tag">
+					<ul>
+						<li><span>关键词：</span><li>
+						<% if (item.tags && item.tags.length){ %>
+                            <%- partial('article-tags', {item: item}) %>
+                        <% } %>					
+					</ul>
+				</div>	
+			</div>	
+		</div>
+	</div><!--main end-->
+<%- partial('_partial/footer') %>

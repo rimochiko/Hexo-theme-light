@@ -1,0 +1,12 @@
+<%- partial('_partial/head') %><!--header end-->
+	<!--main begin-->
+	<div class="main">
+		<div class="article-list">
+                <% page.posts.each(function(item){ %>
+                    <%- partial('_partial/article-list', {item: item}) %>
+                <% }); %>
+		</div>
+		<%- partial('_partial/pagination') %>
+	</div><!--main end-->
+	<!--footer begin-->
+<%- partial('_partial/footer') %>

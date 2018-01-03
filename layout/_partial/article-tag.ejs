@@ -1,0 +1,8 @@
+<%
+    var tags = [];
+    item.tags.forEach(function(tag){
+        tags.push('<li><a href="' + config.root + tag.path + '" class="a_tag">' + tag.name + '</a></li>');
+    });
+%>
+
+<%- tags.join(' ') %>
