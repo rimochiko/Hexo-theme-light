@@ -1,4 +1,3 @@
-/* 1 normalize */
 article,
 aside,
 details,
@@ -207,8 +206,8 @@ blockquote {
 	font-style: italic;
 }
 
-/* 2 public */
 body {
+	min-width: 500px;
 	background-color: #f8f6f6;
 }
 
@@ -221,7 +220,10 @@ a {
 	text-decoration: none;
 }
 
-/* 3 header */
+img {
+	max-width: 100%;
+}
+
 .header {
 
 }
@@ -346,6 +348,7 @@ a {
 
 .main .article > .des p pre {
 	font-size: 1em;
+	color: #999;
 }
 .main .article > .des img {
 	margin: 10px 0;
@@ -427,10 +430,6 @@ a {
 
 .tag-list .tag-detail>ul>li>a:hover {
 	color: #999;
-}
-/* 4 footer */
-.footer {
-
 }
 
 .footer .socials {
