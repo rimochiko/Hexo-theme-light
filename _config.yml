@@ -2,4 +2,11 @@
 default_post_title: Hello World
 
 #Date Format
-date_format: YYYY-MMm-DD
+date_format: YYYY-MM-DD
+
+menu:
+  home: /
+  about: /about/
+
+social:
+  GitHub: https://github.com/rimochiko 

@@ -30,7 +30,7 @@ audio:not([controls]) {
 }
 
 html {
-    font-family: "Times New Roman","宋体"
+    font-family: "Merriweather","Open Sans","Microsoft Jhenghei","Microsoft Yahei",sans-serif;
     -ms-text-size-adjust: 100%; 
     -webkit-text-size-adjust: 100%; 
 }
@@ -39,18 +39,14 @@ body {
     margin: 0;
 }
 
-a:focus {
-    outline: thin dotted;
-}
-
 a:active,
 a:hover {
     outline: 0;
 }
 
 h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
+    font-size: 1.6em;
+    margin: 0;
 }
 
 abbr[title] {
@@ -294,7 +290,7 @@ img {
 
 .main .article-list .article {
 	position: relative;
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 }
 
 .main .article > .date >.p_date {
@@ -302,8 +298,8 @@ img {
 	font-size: 1.2em;
 	font-family: "Georgia";
 	position: absolute;
-	top: 20px;
-	left: -70px;
+	top: 25px;
+	left: -80px;
 	-webkit-transform: rotate(90deg);
 	-moz-transform: rotate(90deg);
 	-ms-transform: rotate(90deg);
@@ -312,18 +308,20 @@ img {
 }
 
 .main .article .title {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 .main .article > .title > .a_title {
-	font-size: 1.8em;
+	font-size: 2.2em;
 	font-weight: 800;
+	line-height: 2.2;
 	color: #000;
 }
 
 .main .article > .title > .p_title {
 	font-size: 2.2em;
 	font-weight: 800;
+	line-height: 2.2;
 	color: #000;
 	margin: 0;
 }
@@ -333,8 +331,8 @@ img {
 }
 
 .main .article > .des {
-	font-size: 1.4em;
-	line-height: 2;
+	font-size: 1.2em;
+	line-height: 2.2;
 }
 
 .main .article > .des p {
@@ -396,6 +394,7 @@ img {
 .tag-list .tag-title .p_title {
 	font-size: 2.6em;
 	font-weight: 800;
+	line-height: 2.2;
 	margin: 0;
 }
 
@@ -467,7 +466,35 @@ img {
 }
 
 .footer .copyright .p_copyright {
-	font-size: 1.1em;
+	font-size: 1em;
 	font-weight: 800;	
 	margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+	.main {
+		padding-left: 180px;
+		padding-right: 180px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.main {
+		padding-left: 150px;
+		padding-right: 150px;
+	}
+}
+
+@media screen and (max-width: 414px) {
+	.main {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+
+	h1 {
+		font-size: 1.4em;
+	}
+	.main .article > .title > .a_title {
+		font-size: 2em;
+	}
 }
