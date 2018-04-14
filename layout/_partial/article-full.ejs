@@ -15,11 +15,17 @@
 					<ul>
 						<li><span>关键词：</span><li>
 						<% if (item.tags && item.tags.length){ %>
-                            <%- partial('article-tags', {item: item}) %>
+                            <%- partial('article-tag', {item: item}) %>
                         <% } %>					
 					</ul>
 				</div>	
-			</div>	
+			</div>
+
+			  <% if (item.comments){ %>
+			  <%- partial('git') %>
+			  <% } else { %>
+			    <div class="git"></div>
+			  <% } %>
 		</div>
 	</div>
 <%- partial('_partial/footer') %>

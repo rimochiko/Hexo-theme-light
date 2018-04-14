@@ -35,6 +35,10 @@ html {
     -webkit-text-size-adjust: 100%; 
 }
 
+html,
+body {
+    font-size: 16px;
+}
 body {
     margin: 0;
 }
@@ -45,7 +49,7 @@ a:hover {
 }
 
 h1 {
-    font-size: 1.6em;
+    font-size: 1.6rrem;
     margin: 0;
 }
 
@@ -78,11 +82,13 @@ kbd,
 pre,
 samp {
     font-family: "Consolas";
-    font-size: 1em;
+    font-size: 1rem;
 }
 
-pre {
+pre,
+code {
     white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 q {
@@ -102,11 +108,11 @@ sup {
 }
 
 sup {
-    top: -0.5em;
+    top: -0.5rem;
 }
 
 sub {
-    bottom: -0.25em;
+    bottom: -0.25rem;
 }
 
 img {
@@ -124,7 +130,7 @@ figure {
 fieldset {
     border: 1px solid #c0c0c0;
     margin: 0 2px;
-    padding: 0.35em 0.625em 0.75em;
+    padding: 0.35rem 0.625rem 0.75rem;
 }
 
 legend {
@@ -203,7 +209,7 @@ blockquote {
 }
 
 body {
-	min-width: 500px;
+	min-width: 350px;
 	background-color: #f8f6f6;
 }
 
@@ -226,9 +232,9 @@ img {
 
 .header .logo {
 	position: fixed;
-	top: 20px;
-	left: 20px;
-	width: 22px;
+	top: 1.25rem;
+	left: 1.25rem;
+	width: 1.4rem;
 }
 
 .header .logo:hover .title_logo,
@@ -238,22 +244,22 @@ img {
 
 .header .logo .title_logo {
 	color: #ada594;
-	font-size: 1.2em;
+	font-size: 1.2rem;
 	font-weight: 800;
 	text-align: center;
-	line-height: 1.4em;
+	line-height: 1.4rem;
 	transiton: all 0.5s;
 }
 
 .header .logo .img_logo {
-	width: 22px;
+	width: 1.4rem;
 	transiton: all 0.5s;
 }
 
 .header .navigator {
 	position: fixed;
-	top: 20px;
-	right: 20px;
+	top: 1.25rem;
+	right: 1.25rem;
 }
 
 .header .navigator > ul {
@@ -262,16 +268,16 @@ img {
 	list-style: none;
 }
 .header .navigator > ul > li{
-	padding: 0 5px;
+	padding: 0 0.4px;
 	float: left;
-	width: 20px;
+	width: 1.3rem;
 }
 
 .header .navigator > ul > li>a {
 	display: block;
 	width: 100%;
 	color: #000000;
-	font-size: 1.2em;
+	font-size: 1.2rem;
 	font-weight: 800;
 }
 
@@ -281,25 +287,25 @@ img {
 }
 /* 3 main */
 .main {
-	padding: 40px 250px 20px;
+	padding: 2.5rem 16rem 2.3rem;
 }
 
 .main .article-list {
-	margin-bottom: -20px;
+	margin-bottom: -2.3rem;
 }
 
 .main .article-list .article {
 	position: relative;
-	margin-bottom: 60px;
+	margin-bottom: 4rem;
 }
 
 .main .article > .date >.p_date {
 	color: #ccc18b;
-	font-size: 1.2em;
+	font-size: 1.2rem;
 	font-family: "Georgia";
 	position: absolute;
-	top: 25px;
-	left: -80px;
+	top: 2.5rem;
+	left: -5rem;
 	-webkit-transform: rotate(90deg);
 	-moz-transform: rotate(90deg);
 	-ms-transform: rotate(90deg);
@@ -308,18 +314,18 @@ img {
 }
 
 .main .article .title {
-	margin-bottom: 20px;
+	margin-bottom: 1.25rem;
 }
 
 .main .article > .title > .a_title {
-	font-size: 2.2em;
+	font-size: 2.2rem;
 	font-weight: 800;
 	line-height: 2.2;
 	color: #000;
 }
 
 .main .article > .title > .p_title {
-	font-size: 2.2em;
+	font-size: 2.2rem;
 	font-weight: 800;
 	line-height: 2.2;
 	color: #000;
@@ -331,7 +337,7 @@ img {
 }
 
 .main .article > .des {
-	font-size: 1.2em;
+	font-size: 1.2rem;
 	line-height: 2.2;
 }
 
@@ -345,18 +351,17 @@ img {
 }
 
 .main .article > .des p pre {
-	font-size: 1em;
+	font-size: 1rem;
 	color: #999;
 }
 .main .article > .des img {
-	margin: 10px 0;
+	margin: 0.63rem 0;
 	border: 4px solid #d8cfaa;
 }
 
 .main .article .tag {
-	margin-top: 20px;
-	font-size: 1.2em;
-	font-weight: 800;
+	margin-top: 1.25rem;
+	font-size: 1.2rem;
 	color: #ccc18b;
 }
 
@@ -372,6 +377,7 @@ img {
 
 .main .article .tag .a_tag {
 	color: #000;
+	margin-left: .5rem;
 }
 .main .article .tag .a_tag:hover {
 	color: #999;
@@ -381,25 +387,25 @@ img {
 }
 
 .main .page > a {
-	margin: 0 20px;
+	margin: 0 1.25rem;
 	color: #ada594;
-	font-size: 1.2em;
+	font-size: 1.2rem;
 	font-weight: 800;
 }
 
 .main .tag-list .tag-title {
-	margin-bottom: 20px;
+	margin-bottom: 1.25rem;
 }
 
 .tag-list .tag-title .p_title {
-	font-size: 2.6em;
+	font-size: 2.6rem;
 	font-weight: 800;
 	line-height: 2.2;
 	margin: 0;
 }
 
 .tag-list .tag-title .p_des {
-	font-size: 1.6em;
+	font-size: 1.6rem;
 	font-weight: 800;
 	margin-bottom: 0;
 	color: #ccc18b;
@@ -421,9 +427,9 @@ img {
 }
 
 .tag-list .tag-detail>ul>li>a {
-	font-size: 2.2em;
+	font-size: 2.2rem;
 	color: #000;
-	margin-right: 10px;
+	margin-right: 0.63rem;
 	line-height: 2;
 }
 
@@ -433,8 +439,8 @@ img {
 
 .footer .socials {
 	position: fixed;
-	left: 20px;
-	bottom: 20px;
+	left: 1.25rem;
+	bottom: 1.25rem;
 }
 
 .footer .socials ul {
@@ -461,40 +467,53 @@ img {
 
 .footer .copyright {
 	position: fixed;
-	right: 20px;
-	bottom: 20px;
+	right: 1.25rem;
+	bottom: 1.25rem;
 }
 
 .footer .copyright .p_copyright {
-	font-size: 1em;
+	font-size: 1rem;
 	font-weight: 800;	
 	margin: 0;
 }
 
 @media screen and (max-width: 1024px) {
 	.main {
-		padding-left: 180px;
-		padding-right: 180px;
+		padding-left: 11.3rem;
+		padding-right: 11.3rem;
 	}
 }
 
 @media screen and (max-width: 768px) {
 	.main {
-		padding-left: 150px;
-		padding-right: 150px;
+		padding-left: 9.4rem;
+		padding-right: 9.4rem;
 	}
-}
 
-@media screen and (max-width: 414px) {
-	.main {
-		padding-left: 100px;
-		padding-right: 100px;
+	.main .article > .title > .a_title {
+		font-size: 2rem;
 	}
 
 	h1 {
-		font-size: 1.4em;
+		font-size: 1.8rem;
 	}
-	.main .article > .title > .a_title {
-		font-size: 2em;
+	.footer .copyright .p_copyright {
+		font-size: .9rem;
+	}
+	.main .article > .date >.p_date {
+		font-size: 1.1rem;
+	}
+	body,html {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.main {
+		padding-left: 6.25rem;
+		padding-right: 6.25rem;
+	}
+	body,html {
+		font-size: 12px;
 	}
 }

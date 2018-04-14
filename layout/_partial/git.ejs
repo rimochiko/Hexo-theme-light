@@ -1,0 +1,14 @@
+<div id="git"></div>
+<%- css('css/gitment.css') %>
+<script src="<%- config.root %>js/gitment.js"></script>
+<script>
+var gitment = new Gitment({
+  owner: "",
+  repo: "",
+  oauth: {
+    client_id: "",
+    client_secret:""
+  }
+})
+gitment.render('git')
+</script>
